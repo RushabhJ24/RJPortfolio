@@ -72,10 +72,10 @@ app.post('/api/contact', async (req, res) => {
     };
 
     // append to JSON file
-    const fileData = fs.readFileSync(MESSAGES_FILE, 'utf8');
-    const arr = JSON.parse(fileData || '[]');
-    arr.push(entry);
-    fs.writeFileSync(MESSAGES_FILE, JSON.stringify(arr, null, 2), 'utf8');
+    // const fileData = fs.readFileSync(MESSAGES_FILE, 'utf8');
+    // const arr = JSON.parse(fileData || '[]');
+    // arr.push(entry);
+    // fs.writeFileSync(MESSAGES_FILE, JSON.stringify(arr, null, 2), 'utf8');
 
     // send email notification
     // nodemailer config uses env vars - set them as instructed below
