@@ -29,10 +29,13 @@ const limiter = rateLimit({
   message: { error: 'Too many requests, please try again later.' }
 });
 app.use(cors({
-  origin: "*", // frontend origin(s)
-  methods: ['GET', 'POST'],
-  credentials: true
+  origin: "https://rjportfolio.onrender.com", // your frontend Render URL
 }));
+app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("Backend working!");
+});
 
 // Simple server-side validation & sanitation
 function validatePayload(payload) {

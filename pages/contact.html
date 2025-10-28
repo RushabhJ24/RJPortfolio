@@ -453,6 +453,59 @@
 
     <!-- JavaScript -->
     <script>
+// Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        if (currentTheme === 'dark') {
+            html.classList.add('dark');
+            darkIcon.classList.add('hidden');
+            lightIcon.classList.remove('hidden');
+        } else {
+            html.classList.remove('dark');
+            darkIcon.classList.remove('hidden');
+            lightIcon.classList.add('hidden');
+        }
+
+        themeToggle.addEventListener('click', function() {
+            html.classList.toggle('dark');
+            
+            if (html.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+                darkIcon.classList.add('hidden');
+                lightIcon.classList.remove('hidden');
+            } else {
+                localStorage.setItem('theme', 'light');
+                darkIcon.classList.remove('hidden');
+                lightIcon.classList.add('hidden');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
     // ---------- Elements ----------
     const contactForm = document.getElementById('contact-form');
     const submitBtn = document.getElementById('submit-btn');
@@ -562,7 +615,6 @@
 
 
       try {
-        // Change base path if your API is hosted elsewhere
         const resp = await fetch(`${backendUrl}/api/contact`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
