@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Rushabh.dev | The Technical Storyteller</title>
+    <meta name="description" content="Discover the journey of a passionate full-stack developer. From learning fundamentals to mastering complex systems, explore the story behind 300+ LeetCode solutions and continuous growth.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdevportfol3025back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="font-inter antialiased transition-colors duration-300">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200/20 dark:border-gray-700/20">
+        <div class="container-max">
+            <div class="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-2 group">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+                            <span class="text-white font-bold text-lg">RJ</span>
+                        </div>
+                        <span class="font-bold text-xl text-text-primary dark:text-text-primary-dark">Rushabh.dev</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Home</a>
+                    <a href="about.html" class="text-primary font-semibold hover:text-primary-600 transition-colors duration-200">About</a>
+                    <a href="projects.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Projects</a>
+                    <a href="skills.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Skills</a>
+                    <a href="experience.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Experience</a>
+                    <a href="contact.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Contact</a>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-surface dark:bg-surface-dark hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200" aria-label="Toggle theme">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-text-primary dark:text-text-primary-dark" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-text-primary dark:text-text-primary-dark" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg bg-surface dark:bg-surface-dark hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200" aria-label="Toggle mobile menu">
+                        <svg class="w-6 h-6 text-text-primary dark:text-text-primary-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-background dark:bg-background-dark border-t border-gray-200/20 dark:border-gray-700/20">
+                <div class="px-4 py-4 space-y-3">
+                    <a href="homepage.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Home</a>
+                    <a href="about.html" class="block text-primary font-semibold py-2">About</a>
+                    <a href="projects.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Projects</a>
+                    <a href="skills.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Skills</a>
+                    <a href="experience.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Experience</a>
+                    <a href="contact.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 overflow-hidden bg-gradient-to-br from-background via-surface/50 to-primary/5 dark:from-background-dark dark:via-surface-dark/50 dark:to-primary/10">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse-slow"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="relative z-10 container-max px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="animate-fade-in">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary dark:text-text-primary-dark mb-6">
+                        The <span class="text-gradient">Technical Storyteller</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-text-secondary dark:text-text-secondary-dark max-w-3xl mx-auto leading-relaxed">
+                        Where analytical precision meets creative expression. I don't just solve problems—I craft elegant solutions that bridge technical excellence with human-centered design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Story Section -->
+    <section class="section-padding bg-background dark:bg-background-dark">
+        <div class="container-max">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Story Content -->
+                <div class="animate-slide-up">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-text-primary dark:text-text-primary-dark mb-6">
+                        From Curiosity to <span class="text-gradient">Mastery</span>
+                    </h2>
+                    <div class="space-y-6 text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">
+                        <p>
+                            My journey into software development began with a simple question: "How does this work?" That curiosity led me from dismantling old computers as a teenager to solving complex algorithmic challenges and building full-stack applications that impact real users.
+                        </p>
+                        <p>
+                            What started as weekend coding sessions evolved into a passion for creating solutions that matter. I've spent countless hours on platforms like LeetCode—not just to improve my ranking (currently top 34% globally with 300+ solutions), but to develop the problem-solving mindset that drives everything I do.
+                        </p>
+                        <p>
+                            Today, I approach every project with the same curiosity that got me started, combined with the technical expertise and professional insight gained through years of continuous learning and real-world application.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Profile Image with Stats -->
+                <div class="animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="relative">
+                        <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl hover-lift">
+                            <img src="https://images.unsplash.com/photo-1566924534124-f009c8277a1c" 
+                                 alt="Alex Chen working intensely on code, surrounded by multiple monitors displaying complex algorithms and development environments" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;">
+                        </div>
+                        
+                        <!-- Floating Stats Cards -->
+                        <div class="absolute -top-4 -right-4 bg-primary text-white p-4 rounded-xl shadow-lg hover-lift">
+                            <div class="text-2xl font-bold">300+</div>
+                            <div class="text-sm opacity-90">Problems Solved</div>
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 bg-accent text-white p-4 rounded-xl shadow-lg hover-lift">
+                            <div class="text-2xl font-bold">Top 34%</div>
+                            <div class="text-sm opacity-90">Global Ranking</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="section-padding bg-surface/50 dark:bg-surface-dark/50">
+        <div class="container-max">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary dark:text-text-primary-dark mb-8 animate-fade-in">
+                    Development Philosophy
+                </h2>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <!-- Philosophy Card 1 -->
+                    <div class="card hover-lift animate-slide-up">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary dark:text-text-primary-dark mb-3">Problem-First Thinking</h3>
+                        <p class="text-text-secondary dark:text-text-secondary-dark">Every line of code should solve a real problem. I start with understanding the 'why' before diving into the 'how'.</p>
+                    </div>
+
+                    <!-- Philosophy Card 2 -->
+                    <div class="card hover-lift animate-slide-up" style="animation-delay: 0.1s;">
+                        <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary dark:text-text-primary-dark mb-3">Continuous Learning</h3>
+                        <p class="text-text-secondary dark:text-text-secondary-dark">Technology evolves rapidly. I dedicate time daily to learning new concepts, frameworks, and best practices.</p>
+                    </div>
+
+                    <!-- Philosophy Card 3 -->
+                    <div class="card hover-lift animate-slide-up" style="animation-delay: 0.2s;">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary dark:text-text-primary-dark mb-3">User-Centered Design</h3>
+                        <p class="text-text-secondary dark:text-text-secondary-dark">Great code is invisible to users. I focus on creating seamless experiences that just work.</p>
+                    </div>
+                </div>
+
+                <!-- Quote Section -->
+                <div class="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 animate-fade-in">
+                    <blockquote class="text-2xl sm:text-3xl font-medium text-text-primary dark:text-text-primary-dark mb-4">
+                        "Code is poetry written in logic. Every function should tell a story, every algorithm should solve a purpose."
+                    </blockquote>
+                    <cite class="text-text-secondary dark:text-text-secondary-dark font-medium">— My approach to clean, maintainable code</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Timeline Section -->
+    <section class="section-padding bg-background dark:bg-background-dark">
+        <div class="container-max">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary dark:text-text-primary-dark text-center mb-12 animate-fade-in">
+                    My Journey to <span class="text-gradient">Mastery</span>
+                </h2>
+
+                <!-- Timeline Container -->
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-accent to-primary opacity-30"></div>
+
+                    <!-- Timeline Items -->
+                    <div class="space-y-12">
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item relative pl-20 animate-slide-up" data-year="2021">
+                            <div class="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background dark:border-background-dark shadow-lg"></div>
+                            <div class="card hover-lift cursor-pointer" onclick="toggleTimelineContent('timeline-1')">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-text-primary dark:text-text-primary-dark">The Spark</h3>
+                                        <p class="text-primary font-medium">2021 - First Line of Code</p>
+                                    </div>
+                                    <svg id="timeline-1-icon" class="w-5 h-5 text-text-secondary dark:text-text-secondary-dark transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                                <div id="timeline-1" class="hidden timeline-content">
+                                    <p class="text-text-secondary dark:text-text-secondary-dark mb-4">
+                                        Started with C language basics during college. Built my first "Hello World" program and immediately fell in love with the logical thinking required. Spent nights learning variables, loops, and functions.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">C</span>
+                                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Basic Algorithms</span>
+                                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Problem Solving</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item relative pl-20 animate-slide-up" data-year="2022" style="animation-delay: 0.1s;">
+                            <div class="absolute left-6 w-4 h-4 bg-accent rounded-full border-4 border-background dark:border-background-dark shadow-lg"></div>
+                            <div class="card hover-lift cursor-pointer" onclick="toggleTimelineContent('timeline-2')">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-text-primary dark:text-text-primary-dark">Deep Dive</h3>
+                                        <p class="text-accent font-medium">2022 - Data Structures & Algorithms</p>
+                                    </div>
+                                    <svg id="timeline-2-icon" class="w-5 h-5 text-text-secondary dark:text-text-secondary-dark transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                                <div id="timeline-2" class="hidden timeline-content">
+                                    <p class="text-text-secondary dark:text-text-secondary-dark mb-4">
+                                        Discovered LeetCode and became obsessed with algorithmic thinking. Started with easy problems, gradually working up to medium and hard challenges. This year shaped my analytical mindset.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">LeetCode</span>
+                                        <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Data Structures</span>
+                                        <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Dynamic Programming</span>
+                                        <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">System Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 3 -->
+                        <div class="timeline-item relative pl-20 animate-slide-up" data-year="2023" style="animation-delay: 0.2s;">
+                            <div class="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background dark:border-background-dark shadow-lg"></div>
+                            <div class="card hover-lift cursor-pointer" onclick="toggleTimelineContent('timeline-3')">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-text-primary dark:text-text-primary-dark">Full-Stack Journey</h3>
+                                        <p class="text-primary font-medium">2023 - Web Development Mastery</p>
+                                    </div>
+                                    <svg id="timeline-3-icon" class="w-5 h-5 text-text-secondary dark:text-text-secondary-dark transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                                <div id="timeline-3" class="hidden timeline-content">
+                                    <p class="text-text-secondary dark:text-text-secondary-dark mb-4">
+                                        Expanded into full-stack development. Built my first complete web applications using React, Node.js, and databases. Started building my own projects and gained real-world experience.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">React</span>
+                                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Node.js</span>
+                                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">MongoDB</span>
+                                        <!-- <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Open Source</span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 4 -->
+                        <div class="timeline-item relative pl-20 animate-slide-up" data-year="2024" style="animation-delay: 0.3s;">
+                            <div class="absolute left-6 w-4 h-4 bg-accent rounded-full border-4 border-background dark:border-background-dark shadow-lg"></div>
+                            <div class="card hover-lift cursor-pointer" onclick="toggleTimelineContent('timeline-4')">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-text-primary dark:text-text-primary-dark">Professional Growth</h3>
+                                        <p class="text-accent font-medium">2024 - Industry Recognition</p>
+                                    </div>
+                                    <svg id="timeline-4-icon" class="w-5 h-5 text-text-secondary dark:text-text-secondary-dark transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                                <div id="timeline-4" class="hidden timeline-content">
+                                    <p class="text-text-secondary dark:text-text-secondary-dark mb-4">
+                                        Achieved top 34% ranking on LeetCode with 300+ problems solved. Earned multiple industry certifications from Microsoft, LinkedIn, and IBM. Started mentoring junior developers and sharing knowledge.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Certifications</span>
+                                        <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Mentoring</span>
+                                        <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Leadership</span>
+                                        <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Top 34%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 5 -->
+                        <div class="timeline-item relative pl-20 animate-slide-up" data-year="2025" style="animation-delay: 0.4s;">
+                            <div class="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background dark:border-background-dark shadow-lg animate-pulse"></div>
+                            <div class="card hover-lift cursor-pointer" onclick="toggleTimelineContent('timeline-5')">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-text-primary dark:text-text-primary-dark">Future Vision</h3>
+                                        <p class="text-primary font-medium">2025 - Next Chapter</p>
+                                    </div>
+                                    <svg id="timeline-5-icon" class="w-5 h-5 text-text-secondary dark:text-text-secondary-dark transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                                <div id="timeline-5" class="hidden timeline-content">
+                                    <p class="text-text-secondary dark:text-text-secondary-dark mb-4">
+                                        Looking to join a forward-thinking team where I can contribute to meaningful projects while continuing to grow. Excited about AI/ML integration, cloud architecture, and building scalable solutions that impact millions of users.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">AI/ML</span>
+                                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Cloud Architecture</span>
+                                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Scale</span>
+                                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Impact</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personality Insights Section -->
+    <section class="section-padding bg-surface/50 dark:bg-surface-dark/50">
+        <div class="container-max">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary dark:text-text-primary-dark text-center mb-12 animate-fade-in">
+                    Behind the Code
+                </h2>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Favorite Technologies -->
+                    <div class="card hover-lift animate-slide-up">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary dark:text-text-primary-dark mb-3">Favorite Tech Stack</h3>
+                        <p class="text-text-secondary dark:text-text-secondary-dark mb-4">The tools that make me most productive and excited to code.</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-sm text-text-secondary dark:text-text-secondary-dark">React + JavaScript</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-sm text-text-secondary dark:text-text-secondary-dark">Node.js + Express</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-sm text-text-secondary dark:text-text-secondary-dark">PostgreSQL + MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Problem-Solving Approach -->
+                    <div class="card hover-lift animate-slide-up" style="animation-delay: 0.1s;">
+                        <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary dark:text-text-primary-dark mb-3">Problem-Solving Style</h3>
+                        <p class="text-text-secondary dark:text-text-secondary-dark mb-4">My systematic approach to tackling complex challenges.</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-sm text-text-secondary dark:text-text-secondary-dark">Break down complexity</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-sm text-text-secondary dark:text-text-secondary-dark">Research thoroughly</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-sm text-text-secondary dark:text-text-secondary-dark">Iterate and improve</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learning Philosophy -->
+                    <div class="card hover-lift animate-slide-up" style="animation-delay: 0.2s;">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary dark:text-text-primary-dark mb-3">Learning Mindset</h3>
+                        <p class="text-text-secondary dark:text-text-secondary-dark mb-4">How I stay current in the ever-evolving tech landscape.</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-sm text-text-secondary dark:text-text-secondary-dark">Daily coding practice</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-sm text-text-secondary dark:text-text-secondary-dark">Tech blogs & podcasts</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-sm text-text-secondary dark:text-text-secondary-dark">Personal projects & experiments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section-padding bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5">
+        <div class="container-max">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary dark:text-text-primary-dark mb-6 animate-fade-in">
+                    Ready to Create Something Amazing?
+                </h2>
+                <p class="text-xl text-text-secondary dark:text-text-secondary-dark mb-8 animate-slide-up">
+                    I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply connect with fellow developers who share the passion for creating elegant solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style="animation-delay: 0.2s;">
+                    <a href="projects.html" class="btn-primary inline-flex items-center space-x-2 hover-lift">
+                        <span>View My Projects</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+                    <a href="contact.html" class="btn-secondary inline-flex items-center space-x-2 hover-lift">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                        <span>Let's Connect</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        if (currentTheme === 'dark') {
+            html.classList.add('dark');
+            darkIcon.classList.add('hidden');
+            lightIcon.classList.remove('hidden');
+        } else {
+            html.classList.remove('dark');
+            darkIcon.classList.remove('hidden');
+            lightIcon.classList.add('hidden');
+        }
+
+        themeToggle.addEventListener('click', function() {
+            html.classList.toggle('dark');
+            
+            if (html.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+                darkIcon.classList.add('hidden');
+                lightIcon.classList.remove('hidden');
+            } else {
+                localStorage.setItem('theme', 'light');
+                darkIcon.classList.remove('hidden');
+                lightIcon.classList.add('hidden');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Timeline Content Toggle
+        function toggleTimelineContent(timelineId) {
+            const content = document.getElementById(timelineId);
+            const icon = document.getElementById(timelineId + '-icon');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                content.classList.add('animate-slide-up');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                content.classList.remove('animate-slide-up');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Scroll-triggered animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.animate-fade-in, .animate-slide-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Parallax effect for timeline items
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            timelineItems.forEach((item, index) => {
+                const speed = 0.1 + (index * 0.02);
+                const yPos = -(scrolled * speed);
+                item.style.transform = `translateY(${yPos}px)`;
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+
+        // Timeline item hover effects
+        document.querySelectorAll('.timeline-item .card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

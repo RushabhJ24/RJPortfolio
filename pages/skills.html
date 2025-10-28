@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Achievements - Rushabh.dev</title>
+    <meta name="description" content="Technical mastery hub showcasing 300+ LeetCode solutions, multiple certifications, and comprehensive skill proficiency across full-stack development technologies.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdevportfol3025back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="font-inter antialiased transition-colors duration-300">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200/20 dark:border-gray-700/20">
+        <div class="container-max">
+            <div class="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-2 group">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+                            <span class="text-white font-bold text-lg">RJ</span>
+                        </div>
+                        <span class="font-bold text-xl text-text-primary dark:text-text-primary-dark">Rushabh.dev</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Home</a>
+                    <a href="about.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">About</a>
+                    <a href="projects.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Projects</a>
+                    <a href="skills.html" class="text-primary font-semibold hover:text-primary-600 transition-colors duration-200">Skills</a>
+                    <a href="experience.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Experience</a>
+                    <a href="contact.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Contact</a>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-surface dark:bg-surface-dark hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200" aria-label="Toggle theme">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-text-primary dark:text-text-primary-dark" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-text-primary dark:text-text-primary-dark" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg bg-surface dark:bg-surface-dark hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200" aria-label="Toggle mobile menu">
+                        <svg class="w-6 h-6 text-text-primary dark:text-text-primary-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-background dark:bg-background-dark border-t border-gray-200/20 dark:border-gray-700/20">
+                <div class="px-4 py-4 space-y-3">
+                    <a href="homepage.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Home</a>
+                    <a href="about.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">About</a>
+                    <a href="projects.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Projects</a>
+                    <a href="skills.html" class="block text-primary font-semibold py-2">Skills</a>
+                    <a href="experience.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Experience</a>
+                    <a href="contact.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-background via-surface/50 to-primary/5 dark:from-background-dark dark:via-surface-dark/50 dark:to-primary/10">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse-slow"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="relative z-10 container-max px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary dark:text-text-primary-dark mb-6 animate-fade-in">
+                    Technical <span class="text-gradient">Mastery</span>
+                </h1>
+                <p class="text-xl sm:text-2xl text-text-secondary dark:text-text-secondary-dark max-w-3xl mx-auto animate-slide-up" style="animation-delay: 0.2s;">
+                    Proven expertise across full-stack technologies with continuous learning and measurable achievements
+                </p>
+            </div>
+
+            <!-- Achievement Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 animate-slide-up" style="animation-delay: 0.4s;">
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold text-success mb-2">300+</div>
+                    <div class="text-text-secondary dark:text-text-secondary-dark">LeetCode Solutions</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold text-primary mb-2">Top 34%</div>
+                    <div class="text-text-secondary dark:text-text-secondary-dark">Global Ranking on LeetCode</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold text-accent mb-2">8+</div>
+                    <div class="text-text-secondary dark:text-text-secondary-dark">Certifications</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold text-primary mb-2">73%</div>
+                    <div class="text-text-secondary dark:text-text-secondary-dark">Acceptance Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section-padding bg-background dark:bg-background-dark">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary dark:text-text-primary-dark mb-4">
+                    Technical Skills
+                </h2>
+                <p class="text-lg text-text-secondary dark:text-text-secondary-dark max-w-2xl mx-auto">
+                    Comprehensive expertise across modern development technologies and frameworks
+                </p>
+            </div>
+
+            <!-- Skill Categories -->
+            <div class="space-y-12">
+                <!-- Web Development -->
+                <div class="animate-fade-in">
+                    <h3 class="text-2xl font-bold text-text-primary dark:text-text-primary-dark mb-8 flex items-center">
+                        <svg class="w-8 h-8 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path>
+                        </svg>
+                        Web Development
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" 
+                                     alt="HTML5 markup language logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">HTML5</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" 
+                                     alt="CSS3 styling language logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">CSS3</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
+                                     alt="JavaScript programming language logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">JavaScript</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
+                                     alt="React JavaScript library logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">React</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" 
+                                     alt="Node.js JavaScript runtime logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Node.js</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" 
+                                     alt="Express.js web framework logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200 dark:filter dark:invert"
+                                     onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Express.js</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" 
+                                     alt="Bootstrap logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Bootstrap</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" 
+                                     alt="Tailwind CSS logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Tailwind CSS</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="animate-fade-in">
+                    <h3 class="text-2xl font-bold text-text-primary dark:text-text-primary-dark mb-8 flex items-center">
+                        <svg class="w-8 h-8 text-primary mr-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M8.707 17.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 12l3.293 3.293a1 1 0 010 1.414zm6.586-9.414a1 1 0 010 1.414L18.586 12l-3.293 3.293a1 1 0 101.414 1.414l4-4a1 1 0 000-1.414l-4-4a1 1 0 00-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        Programming Languages
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" 
+                                     alt="Java logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1556075798-4825dfaaf498?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Java</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" 
+                                     alt="C++ logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1605745341112-85968b19335a?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">C++</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="animate-fade-in">
+                    <h3 class="text-2xl font-bold text-text-primary dark:text-text-primary-dark mb-8 flex items-center">
+                        <svg class="w-8 h-8 text-primary mr-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 3.79 2 6v12c0 2.21 4.477 4 10 4s10-1.79 10-4V6c0-2.21-4.477-4-10-4zm0 2c4.411 0 8 .895 8 2s-3.589 2-8 2-8-.895-8-2 3.589-2 8-2zm8 5.09C18.686 9.676 15.543 10 12 10s-6.686-.324-8-0.91V8.18C5.314 8.766 8.457 9.09 12 9.09s6.686-.324 8-.91v.91zm0 3.09c-1.314.586-4.457.91-8 .91s-6.686-.324-8-.91v-1c1.314.586 4.457.91 8 .91s6.686-.324 8-.91v1zm0 3.09c-1.314.586-4.457.91-8 .91s-6.686-.324-8-.91v-1c1.314.586 4.457.91 8 .91s6.686-.324 8-.91v1zm0 3.09c-1.314.586-4.457.91-8 .91s-6.686-.324-8-.91v-1c1.314.586 4.457.91 8 .91s6.686-.324 8-.91v1z" />
+                        </svg>
+                        Databases
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" 
+                                     alt="MYSQL logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">MySQL</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" 
+                                     alt="PostgreSQL logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">PostgreSQL</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" 
+                                     alt="MongoDB logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">MongoDB</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data Analytics -->
+                <div class="animate-fade-in">
+                    <h3 class="text-2xl font-bold text-text-primary dark:text-text-primary-dark mb-8 flex items-center">
+                        <svg class="w-8 h-8 text-primary mr-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 3a1 1 0 0 1 1 1v16h2V4a1 1 0 1 1 2 0v16h2V10a1 1 0 1 1 2 0v10h2V7a1 1 0 1 1 2 0v13h1a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2h2V4a1 1 0 0 1 1-1z"/>
+                        </svg>
+                        Data Analytics
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://www.svgrepo.com/show/452091/python.svg" 
+                                     alt="Python logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Python</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://www.svgrepo.com/show/331760/sql-database-generic.svg" 
+                                     alt="SQL logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">SQL</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://www.svgrepo.com/show/173800/filtering-data.svg" 
+                                     alt="Data Cleaning and Preparation logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200 dark:filter dark:invert"
+                                     onerror="this.src='https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center pl-8">Data Cleaning and Preparation</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://static.thenounproject.com/png/machine-learning-icon-4647392-512.png" 
+                                     alt="Machine Learning logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200 dark:filter dark:invert"
+                                     onerror="this.src='https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Machine Learning</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.2.0/powerbi.svg" 
+                                     alt="PowerBI logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200 dark:filter dark:invert"
+                                     onerror="this.src='https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Power BI</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools & Technologies -->
+                    <div class="animate-fade-in">
+                    <h3 class="text-2xl font-bold text-text-primary dark:text-text-primary-dark mb-8 mt-6 flex items-center">
+                        <svg class="w-8 h-8 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+                        </svg>
+                        Tools & Technologies
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.simpleicons.org/git" 
+                                     alt="Git version control system logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1556075798-4825dfaaf498?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Git</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.simpleicons.org/github" 
+                                     alt="GitHub logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200 dark:filter dark:invert"
+                                     onerror="this.src='https://images.unsplash.com/photo-1605745341112-85968b19335a?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">GitHub</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://cdn.simpleicons.org/jira" 
+                                     alt="Jira logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Jira</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://www.svgrepo.com/show/425534/gear-mobile-optimization.svg" 
+                                     alt="Software Development Lifecycle logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200 dark:filter dark:invert"
+                                     onerror="this.src='https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">SDLC</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 70%"></div>
+                            </div>
+                        </div>                        
+                    </div>
+                
+                    <!-- Soft Skills -->
+                    <div class="animate-fade-in">
+                    <h3 class="text-2xl font-bold text-text-primary dark:text-text-primary-dark mb-8 mt-9 flex items-center">
+                        <svg class="w-8 h-8 text-primary mr-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4S8 5.79 8 8s1.79 4 4 4zm-6 8v-1c0-2.21 3.58-4 6-4s6 1.79 6 4v1H6z"/>
+                        </svg>
+                        Soft Skills
+                    </h3>
+
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://www.svgrepo.com/show/223883/time-management.svg" 
+                                     alt="Time Management logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1556075798-4825dfaaf498?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Time Management</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://www.svgrepo.com/show/290087/teamwork.svg" 
+                                     alt="Teamwork logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200"
+                                     onerror="this.src='https://images.unsplash.com/photo-1605745341112-85968b19335a?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Teamwork</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://www.svgrepo.com/show/308008/problem-solving-fix-offer-solution-solve.svg" 
+                                     alt="Problem Solving logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200 dark:filter dark:invert"
+                                     onerror="this.src='https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Problem Solving</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://www.svgrepo.com/show/494031/communication.svg" 
+                                     alt="Communication logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200 dark:filter dark:invert"
+                                     onerror="this.src='https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Communication</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 70%"></div>
+                            </div>
+                        </div>        
+                        
+                        <div class="skill-card group">
+                            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                <img src="https://www.svgrepo.com/show/188834/leadership.svg" 
+                                     alt="Leadership logo" 
+                                     class="w-12 h-12 group-hover:scale-110 transition-transform duration-200 dark:filter dark:invert"
+                                     onerror="this.src='https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1000&auto=format&fit=crop'; this.onerror=null;">
+                            </div>
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2 flex items-center justify-center">Leadership</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" style="width: 70%"></div>
+                            </div>
+                        </div>        
+
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Achievements Section -->
+    <section class="section-padding bg-surface/50 dark:bg-surface-dark/50">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary dark:text-text-primary-dark mb-4">
+                    Coding Achievements
+                </h2>
+                <p class="text-lg text-text-secondary dark:text-text-secondary-dark max-w-2xl mx-auto">
+                    Proven problem-solving abilities through competitive programming and continuous practice
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- LeetCode Stats -->
+                <div class="card hover-lift animate-fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-text-primary dark:text-text-primary-dark">LeetCode</h3>
+                            <p class="text-text-secondary dark:text-text-secondary-dark">Competitive Programming</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary dark:text-text-secondary-dark">Problems Solved</span>
+                            <span class="text-2xl font-bold text-success">300+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary dark:text-text-secondary-dark">Global Ranking</span>
+                            <span class="text-xl font-semibold text-primary">Top 34%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary dark:text-text-secondary-dark">Acceptance Rate</span>
+                            <span class="text-xl font-semibold text-accent">73%</span>
+                        </div>
+                        <div class="pt-4">
+                            <div class="flex justify-between text-sm mb-2">
+                                <span class="text-success">Easy: 157</span>
+                                <span class="text-warning">Medium: 136</span>
+                                <span class="text-error">Hard: 27</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-success via-warning to-error h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <a href="https://leetcode.com/u/RushabhJ24/" target="_blank" rel="noopener noreferrer" class="btn-secondary w-full text-center">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HackerRank Stats -->
+                <div class="card hover-lift animate-fade-in" style="animation-delay: 0.1s;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c1.285 0 9.75 4.886 10.392 6 .642 1.114.642 10.886 0 12C21.75 19.114 13.285 24 12 24s-9.75-4.886-10.392-6c-.642-1.114-.642-10.886 0-12C2.25 4.886 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V7.057c0-.143-.116-.258-.258-.258H8.963c-.141 0-.258.115-.258.258v9.886c0 .141.117.258.258.258h.742c.142 0 .258-.117.258-.258v-4.63h4.074v4.63c0 .141.116.258.258.258h.742c.141 0 .258-.117.258-.258V7.057c0-.143-.117-.258-.258-.258h-.742z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-text-primary dark:text-text-primary-dark">HackerRank</h3>
+                            <p class="text-text-secondary dark:text-text-secondary-dark">Algorithm Challenges</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary dark:text-text-secondary-dark">Java</span>
+                            <div class="flex items-center">
+                                <span class="text-xl font-semibold text-success">5★</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary dark:text-text-secondary-dark">C++</span>
+                            <span class="text-xl font-semibold text-success">4★</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary dark:text-text-secondary-dark">SQL</span>
+                            <span class="text-xl font-semibold text-success">5★</span>
+                        </div>
+                    </div>
+                    <div class="mt-24">
+                        <a href="https://www.hackerrank.com/profile/rushabhsjain40" target="_blank" rel="noopener noreferrer" class="btn-secondary w-full text-center">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GitHub Stats -->
+                <div class="card hover-lift animate-fade-in" style="animation-delay: 0.2s;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-text-primary dark:text-text-primary-dark">GitHub</h3>
+                            <p class="text-text-secondary dark:text-text-secondary-dark">Open Source Contributions</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary dark:text-text-secondary-dark">Public Repositories</span>
+                            <span class="text-2xl font-bold text-accent">20</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary dark:text-text-secondary-dark">Total Stars</span>
+                            <span class="text-xl font-semibold text-primary">10</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary dark:text-text-secondary-dark">Followers</span>
+                            <span class="text-xl font-semibold text-success">4</span>
+                        </div>
+                    </div>
+                    <div class="mt-24">
+                        <a href="https://github.com/RushabhJ24" target="_blank" rel="noopener noreferrer" class="btn-secondary w-full text-center">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section-padding bg-background dark:bg-background-dark">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary dark:text-text-primary-dark mb-4">
+                    Professional Certifications
+                </h2>
+                <p class="text-lg text-text-secondary dark:text-text-secondary-dark max-w-2xl mx-auto">
+                    Verified credentials demonstrating continuous learning and industry expertise
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Microsoft and LinkedIn Certification -->
+                <div class="card hover-lift text-center animate-fade-in">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-text-primary-dark mb-2">Microsoft and LinkedIn</h3>
+                    <p class="text-text-secondary dark:text-text-secondary-dark mb-4">Career Essentials in Data Analysis </p>
+                    <p class="text-sm text-text-secondary dark:text-text-secondary-dark">Issued: March 2024</p>
+                </div>
+
+                <!-- IBM Certificate -->
+                <div class="card hover-lift text-center animate-fade-in" style="animation-delay: 0.1s;">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <svg viewBox="0 -153.5 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#1a27e0" stroke="#1a27e0"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
+                            <g> <path d="M99.55552,190.060579 L99.55552,204.282819 L0,204.282819 L0,190.060579 L99.55552,190.060579 Z M255.1384,190.059939 C245.151671,199.241068 232.070596,204.31949 218.50496,204.282019 L218.50496,204.282019 L113.77792,204.141379 L113.77792,190.059939 Z M403.1664,190.059779 L398.2,204.282179 L393.2784,190.059779 L403.1664,190.059779 Z M355.55584,190.060579 L355.55584,204.282819 L284.44464,204.282819 L284.44464,190.060579 L355.55584,190.060579 Z M512,190.060579 L512,204.282819 L440.8888,204.282819 L440.8888,190.060579 L512,190.060579 Z M271.24672,162.908899 C270.026362,167.89787 268.099708,172.686973 265.52512,177.131139 L265.52512,177.131139 L113.77792,177.131139 L113.77792,162.908899 Z M412.6976,162.909379 L407.7056,177.131779 L388.7392,177.131779 L383.7472,162.909379 L412.6976,162.909379 Z M355.55584,162.908899 L355.55584,177.131139 L284.44464,177.131139 L284.44464,162.908899 L355.55584,162.908899 Z M512,162.908899 L512,177.131139 L440.8888,177.131139 L440.8888,162.908899 L512,162.908899 Z M99.55552,162.908899 L99.55552,177.131139 L0,177.131139 L0,162.908899 L99.55552,162.908899 Z M71.11104,135.757379 L71.11104,149.979779 L28.44432,149.979779 L28.44432,135.757379 L71.11104,135.757379 Z M184.88896,135.757379 L184.88896,149.979779 L142.22224,149.979779 L142.22224,135.757379 L184.88896,135.757379 Z M270.90576,135.757379 C272.166041,140.393192 272.805755,145.175711 272.80816,149.979779 L272.80816,149.979779 L224.96976,149.979779 L224.96976,135.757379 Z M422.2304,135.757379 L417.2368,149.979779 L379.208,149.979779 L374.2144,135.757379 L422.2304,135.757379 Z M355.55568,135.757379 L355.55568,149.979779 L312.88896,149.979779 L312.88896,135.757379 L355.55568,135.757379 Z M483.55552,135.757379 L483.55552,149.979779 L440.8888,149.979779 L440.8888,135.757379 L483.55552,135.757379 Z M71.11104,108.606019 L71.11104,122.828259 L28.44432,122.828259 L28.44432,108.606019 L71.11104,108.606019 Z M355.55568,108.606019 L355.55568,122.828259 L312.88896,122.828259 L312.88896,108.606019 L355.55568,108.606019 Z M483.55552,108.606019 L483.55552,122.828259 L440.8888,122.828259 L440.8888,108.606019 L483.55552,108.606019 Z M253.64576,108.605379 C258.382421,112.634795 262.394807,117.444874 265.50928,122.827459 L265.50928,122.827459 L142.22176,122.827459 L142.22176,108.605379 Z M431.7616,108.605379 L426.7696,122.827779 L369.6752,122.827779 L364.6832,108.605379 L431.7616,108.605379 Z M394.224,81.4549786 L398.2224,92.9509786 L402.2192,81.4549786 L483.5552,81.4549786 L483.5552,95.6773786 L440.8896,95.6773786 L440.8896,82.6085786 L436.3008,95.6773786 L360.144,95.6773786 L355.5552,82.6069786 L355.5552,95.6773786 L312.8896,95.6773786 L312.8896,81.4549786 L394.224,81.4549786 Z M142.22224,81.4543386 L265.51024,81.4551386 C262.395586,86.8377816 258.383042,91.6479099 253.64624,95.6773786 L253.64624,95.6773786 L142.22224,95.6773786 L142.22224,81.4543386 Z M71.11104,81.4543386 L71.11104,95.6765786 L28.44432,95.6765786 L28.44432,81.4543386 L71.11104,81.4543386 Z M71.11104,54.3029786 L71.11104,68.5252186 L28.44432,68.5252186 L28.44432,54.3029786 L71.11104,54.3029786 Z M184.88896,54.3029786 L184.88896,68.5252186 L142.22224,68.5252186 L142.22224,54.3029786 L184.88896,54.3029786 Z M272.80816,54.3031386 C272.805733,59.1071522 272.166019,63.8896155 270.90576,68.5253786 L270.90576,68.5253786 L224.96976,68.5253786 L224.96976,54.3031386 Z M384.7824,54.3029786 L389.728,68.5253786 L312.8896,68.5253786 L312.8896,54.3029786 L384.7824,54.3029786 Z M483.5552,54.3029786 L483.5552,68.5253786 L406.7168,68.5253786 L411.6624,54.3029786 L483.5552,54.3029786 Z M99.55552,27.1514586 L99.55552,41.3736986 L0,41.3736986 L0,27.1514586 L99.55552,27.1514586 Z M265.52512,27.1514586 C268.099627,31.5955505 270.026276,36.3845354 271.24672,41.3733786 L271.24672,41.3733786 L113.77792,41.3733786 L113.77792,27.1514586 Z M512,27.1509786 L512,41.3733786 L416.1584,41.3733786 L421.104,27.1509786 L512,27.1509786 Z M375.3408,27.1509786 L380.2864,41.3733786 L284.4448,41.3733786 L284.4448,27.1509786 L375.3408,27.1509786 Z M99.55552,9.85716419e-05 L99.55552,14.2223386 L0,14.2223386 L0,9.85716419e-05 L99.55552,9.85716419e-05 Z M218.50496,4.91529226e-05 C232.066886,-0.0182214039 245.141087,5.05759937 255.13792,14.2221786 L255.13792,14.2221786 L113.77792,14.2221786 L113.77792,4.91529226e-05 Z M512,0.000578571642 L512,14.2229786 L425.6,14.2229786 L430.5456,0.000578571642 L512,0.000578571642 Z M365.8992,0.000578571642 L370.8448,14.2229786 L284.4448,14.2229786 L284.4448,0.000578571642 L365.8992,0.000578571642 Z" fill="#173ac4"> </path> </g> </g>
+                        </svg>
+
+                    </div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-text-primary-dark mb-2">IBM Developer Skills Network</h3>
+                    <p class="text-text-secondary dark:text-text-secondary-dark mb-4">Web Development Fundamentals</p>
+                    <p class="text-sm text-text-secondary dark:text-text-secondary-dark">Issued: February 2024</p>
+                </div>
+
+                <!-- IBM Certification -->
+                <div class="card hover-lift text-center animate-fade-in" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <svg viewBox="0 -153.5 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#1a27e0" stroke="#1a27e0"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
+                            <g> <path d="M99.55552,190.060579 L99.55552,204.282819 L0,204.282819 L0,190.060579 L99.55552,190.060579 Z M255.1384,190.059939 C245.151671,199.241068 232.070596,204.31949 218.50496,204.282019 L218.50496,204.282019 L113.77792,204.141379 L113.77792,190.059939 Z M403.1664,190.059779 L398.2,204.282179 L393.2784,190.059779 L403.1664,190.059779 Z M355.55584,190.060579 L355.55584,204.282819 L284.44464,204.282819 L284.44464,190.060579 L355.55584,190.060579 Z M512,190.060579 L512,204.282819 L440.8888,204.282819 L440.8888,190.060579 L512,190.060579 Z M271.24672,162.908899 C270.026362,167.89787 268.099708,172.686973 265.52512,177.131139 L265.52512,177.131139 L113.77792,177.131139 L113.77792,162.908899 Z M412.6976,162.909379 L407.7056,177.131779 L388.7392,177.131779 L383.7472,162.909379 L412.6976,162.909379 Z M355.55584,162.908899 L355.55584,177.131139 L284.44464,177.131139 L284.44464,162.908899 L355.55584,162.908899 Z M512,162.908899 L512,177.131139 L440.8888,177.131139 L440.8888,162.908899 L512,162.908899 Z M99.55552,162.908899 L99.55552,177.131139 L0,177.131139 L0,162.908899 L99.55552,162.908899 Z M71.11104,135.757379 L71.11104,149.979779 L28.44432,149.979779 L28.44432,135.757379 L71.11104,135.757379 Z M184.88896,135.757379 L184.88896,149.979779 L142.22224,149.979779 L142.22224,135.757379 L184.88896,135.757379 Z M270.90576,135.757379 C272.166041,140.393192 272.805755,145.175711 272.80816,149.979779 L272.80816,149.979779 L224.96976,149.979779 L224.96976,135.757379 Z M422.2304,135.757379 L417.2368,149.979779 L379.208,149.979779 L374.2144,135.757379 L422.2304,135.757379 Z M355.55568,135.757379 L355.55568,149.979779 L312.88896,149.979779 L312.88896,135.757379 L355.55568,135.757379 Z M483.55552,135.757379 L483.55552,149.979779 L440.8888,149.979779 L440.8888,135.757379 L483.55552,135.757379 Z M71.11104,108.606019 L71.11104,122.828259 L28.44432,122.828259 L28.44432,108.606019 L71.11104,108.606019 Z M355.55568,108.606019 L355.55568,122.828259 L312.88896,122.828259 L312.88896,108.606019 L355.55568,108.606019 Z M483.55552,108.606019 L483.55552,122.828259 L440.8888,122.828259 L440.8888,108.606019 L483.55552,108.606019 Z M253.64576,108.605379 C258.382421,112.634795 262.394807,117.444874 265.50928,122.827459 L265.50928,122.827459 L142.22176,122.827459 L142.22176,108.605379 Z M431.7616,108.605379 L426.7696,122.827779 L369.6752,122.827779 L364.6832,108.605379 L431.7616,108.605379 Z M394.224,81.4549786 L398.2224,92.9509786 L402.2192,81.4549786 L483.5552,81.4549786 L483.5552,95.6773786 L440.8896,95.6773786 L440.8896,82.6085786 L436.3008,95.6773786 L360.144,95.6773786 L355.5552,82.6069786 L355.5552,95.6773786 L312.8896,95.6773786 L312.8896,81.4549786 L394.224,81.4549786 Z M142.22224,81.4543386 L265.51024,81.4551386 C262.395586,86.8377816 258.383042,91.6479099 253.64624,95.6773786 L253.64624,95.6773786 L142.22224,95.6773786 L142.22224,81.4543386 Z M71.11104,81.4543386 L71.11104,95.6765786 L28.44432,95.6765786 L28.44432,81.4543386 L71.11104,81.4543386 Z M71.11104,54.3029786 L71.11104,68.5252186 L28.44432,68.5252186 L28.44432,54.3029786 L71.11104,54.3029786 Z M184.88896,54.3029786 L184.88896,68.5252186 L142.22224,68.5252186 L142.22224,54.3029786 L184.88896,54.3029786 Z M272.80816,54.3031386 C272.805733,59.1071522 272.166019,63.8896155 270.90576,68.5253786 L270.90576,68.5253786 L224.96976,68.5253786 L224.96976,54.3031386 Z M384.7824,54.3029786 L389.728,68.5253786 L312.8896,68.5253786 L312.8896,54.3029786 L384.7824,54.3029786 Z M483.5552,54.3029786 L483.5552,68.5253786 L406.7168,68.5253786 L411.6624,54.3029786 L483.5552,54.3029786 Z M99.55552,27.1514586 L99.55552,41.3736986 L0,41.3736986 L0,27.1514586 L99.55552,27.1514586 Z M265.52512,27.1514586 C268.099627,31.5955505 270.026276,36.3845354 271.24672,41.3733786 L271.24672,41.3733786 L113.77792,41.3733786 L113.77792,27.1514586 Z M512,27.1509786 L512,41.3733786 L416.1584,41.3733786 L421.104,27.1509786 L512,27.1509786 Z M375.3408,27.1509786 L380.2864,41.3733786 L284.4448,41.3733786 L284.4448,27.1509786 L375.3408,27.1509786 Z M99.55552,9.85716419e-05 L99.55552,14.2223386 L0,14.2223386 L0,9.85716419e-05 L99.55552,9.85716419e-05 Z M218.50496,4.91529226e-05 C232.066886,-0.0182214039 245.141087,5.05759937 255.13792,14.2221786 L255.13792,14.2221786 L113.77792,14.2221786 L113.77792,4.91529226e-05 Z M512,0.000578571642 L512,14.2229786 L425.6,14.2229786 L430.5456,0.000578571642 L512,0.000578571642 Z M365.8992,0.000578571642 L370.8448,14.2229786 L284.4448,14.2229786 L284.4448,0.000578571642 L365.8992,0.000578571642 Z" fill="#173ac4"> </path> </g> </g>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-text-primary-dark mb-2">IBM Developer Skills Network</h3>
+                    <p class="text-text-secondary dark:text-text-secondary-dark mb-4">Data Analysis Using Python</p>
+                    <p class="text-sm text-text-secondary dark:text-text-secondary-dark">Issued: January 2024</p>
+                </div>
+
+                <!-- TATA Certification -->
+                <div class="card hover-lift text-center animate-fade-in" style="animation-delay: 0.3s;">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <img src="https://brandlogos.net/wp-content/uploads/2022/04/tata_neu-logo-brandlogos.net_-512x512.png" alt="TATA Neuskills Logo" class="w-10 h-10 object-contain">
+
+                    </div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-text-primary-dark mb-2">TATA Neuskills</h3>
+                    <p class="text-text-secondary dark:text-text-secondary-dark mb-4">ReactJs Fundamentals</p>
+                    <p class="text-sm text-text-secondary dark:text-text-secondary-dark">Issued: December 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section-padding bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container-max text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                Ready to Work Together?
+            </h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                Let's discuss how my technical expertise can contribute to your next project
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="projects.html" class="btn-secondary bg-white text-primary hover:bg-gray-100 hover:text-primary">
+                    View My Projects
+                </a>
+                <a href="contact.html" class="btn-secondary border-white text-white hover:bg-white hover:text-primary">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Styles -->
+    <style>
+        .skill-card {
+            @apply bg-surface dark:bg-surface-dark rounded-lg p-6 text-center transition-all duration-300 hover:shadow-lg;
+        }
+
+        .skill-progress {
+            @apply w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-2;
+        }
+
+        .skill-bar {
+            @apply bg-gradient-to-r from-primary to-accent h-2 rounded-full transition-all duration-1000 ease-out;
+            animation: fillBar 2s ease-out forwards;
+        }
+
+        @keyframes fillBar {
+            from { width: 0; }
+        }
+
+        .animate-pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        .animate-bounce-subtle {
+            animation: bounceSubtle 2s infinite;
+        }
+
+        @keyframes bounceSubtle {
+            0%, 100% {
+                transform: translateY(0);
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+            50% {
+                transform: translateY(-5px);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        if (currentTheme === 'dark') {
+            html.classList.add('dark');
+            darkIcon.classList.add('hidden');
+            lightIcon.classList.remove('hidden');
+        } else {
+            html.classList.remove('dark');
+            darkIcon.classList.remove('hidden');
+            lightIcon.classList.add('hidden');
+        }
+
+        themeToggle.addEventListener('click', function() {
+            html.classList.toggle('dark');
+            
+            if (html.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+                darkIcon.classList.add('hidden');
+                lightIcon.classList.remove('hidden');
+            } else {
+                localStorage.setItem('theme', 'light');
+                darkIcon.classList.remove('hidden');
+                lightIcon.classList.add('hidden');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll-triggered animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    
+                    // Animate skill bars when they come into view
+                    const skillBars = entry.target.querySelectorAll('.skill-bar');
+                    skillBars.forEach(bar => {
+                        bar.style.animation = 'fillBar 2s ease-out forwards';
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.animate-fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Skill Assessment Quiz Functionality
+        document.querySelectorAll('.cursor-pointer').forEach(quiz => {
+            quiz.addEventListener('click', function() {
+                const quizType = this.querySelector('h4').textContent;
+                alert(`Starting ${quizType}! This feature will be available soon.`);
+            });
+        });
+
+        // Start Assessment Button
+        document.querySelector('.btn-primary').addEventListener('click', function() {
+            alert('Skill assessment feature coming soon! This will provide personalized feedback on your technical abilities.');
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+            
+            // Trigger skill bar animations after page load
+            setTimeout(() => {
+                document.querySelectorAll('.skill-bar').forEach(bar => {
+                    bar.style.animation = 'fillBar 2s ease-out forwards';
+                });
+            }, 500);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add parallax effect to background elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.absolute');
+            
+            parallaxElements.forEach((element, index) => {
+                const speed = 0.5 + (index * 0.1);
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

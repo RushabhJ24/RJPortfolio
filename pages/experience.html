@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience & Education -  Rushabh.dev</title>
+    <meta name="description" content="Explore my professional journey through interactive career timeline, educational background, and key accomplishments. 3+ years of full-stack development experience with proven track record.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdevportfol3025back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="font-inter antialiased transition-colors duration-300">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200/20 dark:border-gray-700/20">
+        <div class="container-max">
+            <div class="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-2 group">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+                            <span class="text-white font-bold text-lg">RJ</span>
+                        </div>
+                        <span class="font-bold text-xl text-text-primary dark:text-text-primary-dark">Rushabh.dev</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Home</a>
+                    <a href="about.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">About</a>
+                    <a href="projects.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Projects</a>
+                    <a href="skills.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Skills</a>
+                    <a href="experience.html" class="text-primary font-semibold hover:text-primary-600 transition-colors duration-200">Experience</a>
+                    <a href="contact.html" class="text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200">Contact</a>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-surface dark:bg-surface-dark hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200" aria-label="Toggle theme">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-text-primary dark:text-text-primary-dark" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-text-primary dark:text-text-primary-dark" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg bg-surface dark:bg-surface-dark hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200" aria-label="Toggle mobile menu">
+                        <svg class="w-6 h-6 text-text-primary dark:text-text-primary-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-background dark:bg-background-dark border-t border-gray-200/20 dark:border-gray-700/20">
+                <div class="px-4 py-4 space-y-3">
+                    <a href="homepage.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Home</a>
+                    <a href="about.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">About</a>
+                    <a href="projects.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Projects</a>
+                    <a href="skills.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Skills</a>
+                    <a href="experience.html" class="block text-primary font-semibold py-2">Experience</a>
+                    <a href="contact.html" class="block text-text-secondary dark:text-text-secondary-dark hover:text-primary transition-colors duration-200 py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-background via-surface/50 to-primary/5 dark:from-background-dark dark:via-surface-dark/50 dark:to-primary/10">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse-slow"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="relative z-10 container-max px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="animate-fade-in">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary dark:text-text-primary-dark mb-6">
+                        Professional <span class="text-gradient">Journey</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-text-secondary dark:text-text-secondary-dark max-w-3xl mx-auto leading-relaxed">
+                        Explore my career progression, educational foundation, and key accomplishments that shaped my expertise in full-stack development
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section class="section-padding bg-background dark:bg-background-dark">
+        <div class="container-max">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary dark:text-text-primary-dark mb-4">
+                    Career Timeline
+                </h2>
+                <p class="text-lg text-text-secondary dark:text-text-secondary-dark max-w-2xl mx-auto">
+                    A journey of continuous growth, learning, and impactful contributions across diverse technology environments
+                </p>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative max-w-6xl mx-auto">
+                <!-- Timeline Line -->
+                <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-accent to-primary"></div>
+
+                <!-- Experience Items -->
+                <div class="space-y-12">
+                    <!-- Current Position -->
+                    <div class="relative flex flex-col md:flex-row items-start md:items-center animate-slide-up" style="animation-delay: 0.1s;">
+                        <!-- Timeline Dot -->
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background dark:border-background-dark shadow-lg z-10"></div>
+                        
+                        <!-- Content -->
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8 md:text-left">
+                        <div class="card hover-lift group cursor-pointer" onclick="toggleExperience('exp2')">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTadMz-MStVt9uR6Blc8LjoI5y07eKQASlN4Q&s"
+                                        alt="HashedBit Innovations company logo" 
+                                        class="w-12 h-12 rounded-lg object-cover"
+                                        onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-text-primary dark:text-text-primary-dark">Software Developer Intern</h3>
+                                        <p class="text-primary font-semibold">HashedBit Innovations</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <span class="bg-success/10 text-success px-3 py-1 rounded-full text-sm font-medium">Internship</span>
+                                    <p class="text-text-secondary dark:text-text-secondary-dark text-sm mt-1">Dec 2024 - May 2025</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <p class="text-text-secondary dark:text-text-secondary-dark mb-3">
+                                    Developed a full-stack job portal using MERN stack, enhancing efficiency and improving UI responsiveness for a smoother user experience.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">React.js</span>
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Node.js</span>
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">MongoDB</span>
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Express.js</span>
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Bootstrap</span>
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">JWT</span>
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">RBAC</span>
+                                </div>
+                            </div>
+
+                            <!-- Expandable Content -->
+                            <div id="exp2" class="hidden mt-4 pt-4 border-t border-gray-200/20 dark:border-gray-700/20">
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2">Key Accomplishments:</h4>
+                                        <ul class="list-disc list-inside text-text-secondary dark:text-text-secondary-dark space-y-1">
+                                            <li>Developed a full-stack job portal using MERN stack, improving platform efficiency by 30%.</li>
+                                            <li>Implemented JWT authentication and RBAC, enhancing user data security by 40%.</li>
+                                            <li>Improved UI responsiveness and user experience using React.js and Bootstrap.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2">Notable Contributions:</h4>
+                                        <ul class="list-disc list-inside text-text-secondary dark:text-text-secondary-dark space-y-1">
+                                            <li>Integrated secure login and access control using role-based authorization.</li>
+                                            <li>Enhanced frontend scalability and modularity for easier maintenance.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    <!-- Previous Position -->
+                    <div class="relative flex flex-col md:flex-row-reverse items-start md:items-center animate-slide-up" style="animation-delay: 0.2s;">
+                        <!-- Timeline Dot -->
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background dark:border-background-dark shadow-lg z-10"></div>
+                        
+                        <!-- Content -->
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:pl-8 md:text-left">
+                            <div class="card hover-lift group cursor-pointer" onclick="toggleExperience('exp3')">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" 
+                                            alt="HashedBit Innovation logo with analytical and data elements" 
+                                            class="w-12 h-12 rounded-lg object-cover"
+                                            onerror="this.src='https://images.pixabay.com/photo/2016/12/30/10/03/web-1940174_960_720.jpg'; this.onerror=null;">
+                                        <div>
+                                            <h3 class="text-xl font-bold text-text-primary dark:text-text-primary-dark">Data Analyst Intern</h3>
+                                            <p class="text-accent font-semibold">CoTeach</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-text-secondary dark:text-text-secondary-dark text-sm">Mar 2024 - Apr 2024</p>
+                                        <p class="text-text-secondary dark:text-text-secondary-dark text-xs">2 months</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <p class="text-text-secondary dark:text-text-secondary-dark mb-3">
+                                        Performed data validation, cleanup, and SQL query optimization to enhance data accuracy and processing efficiency. Developed insightful dashboards and reports using BI tools, empowering data-driven decision-making.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="bg-accent/10 text-accent px-2 py-1 rounded text-sm">SQL</span>
+                                        <span class="bg-accent/10 text-accent px-2 py-1 rounded text-sm">Power BI</span>
+                                        <span class="bg-accent/10 text-accent px-2 py-1 rounded text-sm">Data Visualization</span>
+                                        <span class="bg-accent/10 text-accent px-2 py-1 rounded text-sm">Data Cleaning</span>
+                                    </div>
+                                </div>
+
+                                <!-- Expandable Content -->
+                                <div id="exp3" class="hidden mt-4 pt-4 border-t border-gray-200/20 dark:border-gray-700/20">
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2">Key Accomplishments:</h4>
+                                            <ul class="list-disc list-inside text-text-secondary dark:text-text-secondary-dark space-y-1">
+                                                <li>Performed thorough data validation and cleanup, increasing dataset accuracy by 30%.</li>
+                                                <li>Optimized SQL queries, reducing data processing time significantly.</li>
+                                                <li>Created insightful dashboards using BI tools to aid strategic decision-making.</li>
+                                                <li>Collaborated with cross-functional teams to ensure consistency in reporting.</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-2">Skills Gained:</h4>
+                                            <p class="text-text-secondary dark:text-text-secondary-dark">Data analytics, SQL optimization, BI visualization, data preprocessing, and problem-solving.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section-padding bg-surface/50 dark:bg-surface-dark/50">
+        <div class="container-max">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary dark:text-text-primary-dark mb-4">
+                    Educational Foundation
+                </h2>
+                <p class="text-lg text-text-secondary dark:text-text-secondary-dark max-w-2xl mx-auto">
+                    Academic background and continuous learning journey that support my technical expertise
+                </p>
+            </div>
+
+            <div class="flex flex-col space-y-10 max-w-4xl mx-auto">
+                <!-- Bachelor's Degree -->
+                <div class="animate-slide-up" style="animation-delay: 0.1s;">
+                    <div class="card hover-lift h-full">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <img src="https://www.becker.com/sites/default/files/styles/atge_no_style_lg/public/2023-10/bachelor-degree.jpg?itok=cofCKVVn" 
+                                alt="Pillai College of Engineering campus building" 
+                                class="w-16 h-16 rounded-lg object-cover"
+                                onerror="this.src='https://images.pixabay.com/photo/2017/05/09/21/49/graduation-2299696_960_720.jpg'; this.onerror=null;">
+                            <div>
+                                <h3 class="text-xl font-bold text-text-primary dark:text-text-primary-dark">Bachelor of Technology</h3>
+                                <p class="text-primary font-semibold">Computer Engineering</p>
+                                <p class="text-primary font-semibold">Pillai College of Engineering, Mumbai University</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary dark:text-text-secondary-dark">Completed</span>
+                                <span class="font-semibold text-text-primary dark:text-text-primary-dark">2025</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary dark:text-text-secondary-dark">CGPA</span>
+                                <span class="font-semibold text-success">9.5 / 10</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-3">Key Subjects</h4>
+                            <div class="grid grid-cols-2 gap-2">
+                                <span class="bg-primary/10 text-primary px-3 py-1 rounded text-sm">Data Structures</span>
+                                <span class="bg-primary/10 text-primary px-3 py-1 rounded text-sm">Algorithms</span>
+                                <span class="bg-primary/10 text-primary px-3 py-1 rounded text-sm">Database Systems</span>
+                                <span class="bg-primary/10 text-primary px-3 py-1 rounded text-sm">Web Development</span>
+                                <span class="bg-primary/10 text-primary px-3 py-1 rounded text-sm">Machine Learning</span>
+                                <span class="bg-primary/10 text-primary px-3 py-1 rounded text-sm">Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HSC Education -->
+                <div class="animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="card hover-lift h-full">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <img src="https://media.istockphoto.com/id/1386780732/photo/masses-of-exam-tables-set-up-ready-for-test.jpg?s=1024x1024&w=is&k=20&c=YSsz58U3zXakKBDf5ZO2aXGQq-VA_R3_QrEMFidKLmA=" 
+                                alt="Maharashtra State Board HSC building" 
+                                class="w-16 h-16 rounded-lg object-cover"
+                                onerror="this.src='https://images.pixabay.com/photo/2017/05/09/21/49/graduation-2299696_960_720.jpg'; this.onerror=null;">
+                            <div>
+                                <h3 class="text-xl font-bold text-text-primary dark:text-text-primary-dark">Higher Secondary Certificate (HSC)</h3>
+                                <p class="text-primary font-semibold">Maharashtra State Board of Secondary and Higher Secondary Education</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary dark:text-text-secondary-dark">Completed</span>
+                                <span class="font-semibold text-text-primary dark:text-text-primary-dark">2021</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary dark:text-text-secondary-dark">Percentage</span>
+                                <span class="font-semibold text-success">93.83%</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-3">Stream</h4>
+                            <p class="text-text-secondary dark:text-text-secondary-dark">Science (Physics, Chemistry, Mathematics)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SSC Education -->
+                <div class="animate-slide-up" style="animation-delay: 0.3s;">
+                    <div class="card hover-lift h-full">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" 
+                                alt="Maharashtra State Board SSC classroom" 
+                                class="w-16 h-16 rounded-lg object-cover"
+                                onerror="this.src='https://images.pixabay.com/photo/2017/05/09/21/49/graduation-2299696_960_720.jpg'; this.onerror=null;">
+                            <div>
+                                <h3 class="text-xl font-bold text-text-primary dark:text-text-primary-dark">Secondary School Certificate (SSC)</h3>
+                                <p class="text-primary font-semibold">Maharashtra State Board of Secondary and Higher Secondary Education</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary dark:text-text-secondary-dark">Completed</span>
+                                <span class="font-semibold text-text-primary dark:text-text-primary-dark">2019</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary dark:text-text-secondary-dark">Percentage</span>
+                                <span class="font-semibold text-success">93.80%</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <h4 class="font-semibold text-text-primary dark:text-text-primary-dark mb-3">Focus Areas</h4>
+                            <p class="text-text-secondary dark:text-text-secondary-dark">Mathematics, Science, and Computer Fundamentals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Call to Action Section -->
+    <section class="section-padding bg-gradient-to-r from-primary to-accent">
+        <div class="container-max">
+            <div class="text-center max-w-4xl mx-auto animate-fade-in">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+                    Ready to Collaborate?
+                </h2>
+                <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                    Let's discuss how my experience and continuous learning mindset can contribute to your team's success
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="contact.html" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 hover-lift">
+                        Get In Touch
+                    </a>
+                    <a href="projects.html" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-200 hover-lift">
+                        View My Work
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        if (currentTheme === 'dark') {
+            html.classList.add('dark');
+            darkIcon.classList.add('hidden');
+            lightIcon.classList.remove('hidden');
+        } else {
+            html.classList.remove('dark');
+            darkIcon.classList.remove('hidden');
+            lightIcon.classList.add('hidden');
+        }
+
+        themeToggle.addEventListener('click', function() {
+            html.classList.toggle('dark');
+            
+            if (html.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+                darkIcon.classList.add('hidden');
+                lightIcon.classList.remove('hidden');
+            } else {
+                localStorage.setItem('theme', 'light');
+                darkIcon.classList.remove('hidden');
+                lightIcon.classList.add('hidden');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Experience Toggle Functionality
+        function toggleExperience(expId) {
+            const element = document.getElementById(expId);
+            const isHidden = element.classList.contains('hidden');
+            
+            // Close all other expanded experiences
+            document.querySelectorAll('[id^="exp"]').forEach(exp => {
+                if (exp.id !== expId) {
+                    exp.classList.add('hidden');
+                }
+            });
+            
+            // Toggle current experience
+            if (isHidden) {
+                element.classList.remove('hidden');
+                element.style.maxHeight = element.scrollHeight + 'px';
+            } else {
+                element.classList.add('hidden');
+                element.style.maxHeight = '0px';
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll-triggered animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.animate-fade-in, .animate-slide-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
