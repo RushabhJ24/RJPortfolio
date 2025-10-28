@@ -29,7 +29,7 @@ const limiter = rateLimit({
   message: { error: 'Too many requests, please try again later.' }
 });
 app.use(cors({
-  origin: ['http://127.0.0.1:5500', 'http://localhost:5500'], // frontend origin(s)
+  origin: "*", // frontend origin(s)
   methods: ['GET', 'POST'],
   credentials: true
 }));
