@@ -19,7 +19,6 @@ if (!fs.existsSync(MESSAGES_FILE)) fs.writeFileSync(MESSAGES_FILE, '[]', 'utf8')
 
 app.use(helmet());
 app.use(express.json({ limit: '10kb' })); // small payloads only
-app.use(cors()); // adjust origin in production
 app.use(express.static(path.join(__dirname, 'public')));
 
 // rate limiter: basic protection
@@ -29,7 +28,12 @@ const limiter = rateLimit({
   message: { error: 'Too many requests, please try again later.' }
 });
 app.use(cors({
-  origin: "https://rjportfolio.onrender.com", // your frontend Render URL
+  origin: [
+    "https://rjportfolio.onrender.com",
+    "http://localhost:5500"
+  ],
+  methods: ["POST", "GET", "OPTIONS"],
+  allowedHeaders: ["Content-Type"]
 }));
 app.use(express.json());
 
