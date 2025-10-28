@@ -29,11 +29,12 @@ const limiter = rateLimit({
 });
 app.use(cors({
   origin: [
-    "https://rjportfolio-0u3b.onrender.com/",
+    "https://rjportfolio-0u3b.onrender.com",
     "http://localhost:5500"
   ],
   methods: ["POST", "GET", "OPTIONS"],
-  allowedHeaders: ["Content-Type"]
+  allowedHeaders: ["Content-Type"],
+  credentials: false
 }));
 app.use(express.json());
 
