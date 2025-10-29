@@ -607,7 +607,7 @@ contactForm.addEventListener('submit', async function(e) {
     message: document.getElementById('message').value.trim()
   };
 
-  const backendUrl = window.location.hostname === "127.0.0.1" ? "http://127.0.0.1:3000" : "https://rushabh-dev-backend.onrender.com"; // Replace with your backend URL
+  const backendUrl = window.location.hostname === "127.0.0.1" ? "http://127.0.0.1:3000" : "https://rjportfolio-backend.onrender.com"; // Replace with your backend URL
   try {
     const resp = await fetch(`${backendUrl}/api/contact`, {
       method: 'POST',
