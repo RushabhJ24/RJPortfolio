@@ -588,63 +588,56 @@
     }
 
     // Submit handler - posts to back-end
-    contactForm.addEventListener('submit', async function(e) {
-      e.preventDefault();
+    // Submit handler - posts to back-end
+contactForm.addEventListener('submit', async function(e) {
+  e.preventDefault(); // Prevent form submission
 
-      if (!validateForm()) return;
+  if (!validateForm()) return;
 
-      submitBtn.disabled = true;
-      submitText.textContent = 'Sending...';
-      submitIcon.classList.add('hidden');
-      loadingIcon.classList.remove('hidden');
+  submitBtn.disabled = true;
+  submitText.textContent = 'Sending...';
+  submitIcon.classList.add('hidden');
+  loadingIcon.classList.remove('hidden');
 
-      // gather data
-      const payload = {
-        name: document.getElementById('name').value.trim(),
-        email: document.getElementById('email').value.trim(),
-        subject: document.getElementById('subject').value,
-        company: document.getElementById('company').value.trim(),
-        message: document.getElementById('message').value.trim(),
-        timestamp: new Date().toISOString()
-      };
+  const payload = {
+    name: document.getElementById('name').value.trim(),
+    email: document.getElementById('email').value.trim(),
+    subject: document.getElementById('subject').value,
+    message: document.getElementById('message').value.trim()
+  };
 
-      const backendUrl = 
-        window.location.hostname === "localhost"
-            ? "http://localhost:3000"
-            : "https://rjportfolio-backend.onrender.com";
-
-
-      try {
-        const resp = await fetch(`${backendUrl}/api/contact`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
-
-        const data = await resp.json();
-        console.log("Data", data);
-        if (!resp.ok || !data.ok) {
-            throw new Error(data?.error || 'Server error');
-        }
-
-        // success
-        successMessage.classList.remove('hidden');
-        contactForm.reset();
-        charCount.textContent = '0';
-        submitText.textContent = 'Message Sent!';
-      } catch (err) {
-        console.error('Submission error', err);
-        alert('There was a problem sending your message. Please try again later.');
-        submitText.textContent = 'Send Message';
-      } finally {
-        loadingIcon.classList.add('hidden');
-        submitIcon.classList.remove('hidden');
-        submitBtn.disabled = false;
-        // hide success after a few seconds
-        setTimeout(() => successMessage.classList.add('hidden'), 5000);
-      }
+  try {
+    const resp = await fetch(`${backendUrl}/api/contact`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
     });
 
+    console.log('Response status:', resp.status);
+
+    if (resp.ok) {
+      successMessage.classList.remove('hidden');
+      contactForm.reset();
+      charCount.textContent = '0';
+      submitText.textContent = 'Message Sent!';
+      alert('✅ Message sent successfully!');
+    } else {
+      throw new Error(`Server responded with status ${resp.status}`);
+    }
+
+  } catch (err) {
+    console.error('Submission error:', err);
+    submitText.textContent = 'Send Message';
+    alert('⚠️ There was a problem sending your message. Please try again later.');
+  } finally {
+    loadingIcon.classList.add('hidden');
+    submitIcon.classList.remove('hidden');
+    submitBtn.disabled = false;
+    setTimeout(() => successMessage.classList.add('hidden'), 5000);
+  }
+});
     // Restore draft from localStorage (optional)
     window.addEventListener('load', () => {
       const saved = localStorage.getItem('contactFormDraft');
