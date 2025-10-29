@@ -20,16 +20,23 @@ if (!fs.existsSync(MESSAGES_FILE)) fs.writeFileSync(MESSAGES_FILE, '[]', 'utf8')
 
 // Security middleware
 app.use(helmet());
+const allowedOrigins = [
+  "https://rjportfolio-0u3b.onrender.com",  // your frontend domain
+  "https://rushabh-dev.onrender.com",       // optional if another frontend
+  "http://localhost:5500",                  // local testing
+  "http://127.0.0.1:5500"
+];
+
 app.use(cors({
-  origin: [
-    "https://rjportfolio-0u3b.onrender.com",
-    "http://localhost:5500",
-    "http://localhost:5501",
-    "http://127.0.0.1:5500"
-  ],
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like curl or Postman)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) return callback(null, true);
+    console.warn(`❌ Blocked CORS request from: ${origin}`);
+    return callback(new Error('Not allowed by CORS'));
+  },
   methods: ["POST", "GET", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
-  credentials: false
 }));
 app.options(/.*/, cors());
 
