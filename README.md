@@ -1,6 +1,21 @@
-# HTML
+# 🌐 RJPortfolio
 
-A modern HTML project utilizing Tailwind CSS for building responsive web applications with minimal setup.
+A modern, responsive personal portfolio website to showcase my skills, experience, and projects.  
+🎯 Built using **HTML**, **CSS**, **JavaScript**, and **Tailwind CSS** for a smooth, minimal, and elegant design.
+
+---
+
+## 🚀 Live Demo  
+🔗 **[View Portfolio](https://rjportfolio-0u3b.onrender.com/)**
+
+---
+
+## 🧰 Tech Stack  
+- HTML5  
+- CSS3 / Tailwind CSS  
+- JavaScript (Vanilla)  
+
+---
 
 ## 🚀 Features
 
@@ -9,6 +24,8 @@ A modern HTML project utilizing Tailwind CSS for building responsive web applica
 - **Custom Components** - Pre-built component classes for buttons and containers
 - **NPM Scripts** - Easy-to-use commands for development and building
 - **Responsive Design** - Mobile-first approach for all screen sizes
+- Contact form integrated with backend API
+- Sections for About, Experience, Projects, and Contact 
 
 ## 📋 Prerequisites
 
@@ -34,7 +51,14 @@ yarn dev
 ## 📁 Project Structure
 
 ```
-html_app/
+RJPortfolio/
+├── assests
+│   ├── RJResume.pdf
+│   ├── favicon.png
+│   └── profile.jpg
+├── backend/
+│   ├── package.json
+│   └── server.json
 ├── css/
 │   ├── tailwind.css   # Tailwind source file with custom utilities
 │   └── main.css       # Compiled CSS (generated)
@@ -42,6 +66,15 @@ html_app/
 ├── index.html         # Main entry point
 ├── package.json       # Project dependencies and scripts
 └── tailwind.config.js # Tailwind CSS configuration
+```
+
+## 🗂️ Environment Setup  
+In the `backend` folder, create a `.env` file with the following variables:
+
+```env
+PORT=
+RESEND_API_KEY=
+RECEIVER_EMAIL=
 ```
 
 ## 🎨 Styling
@@ -74,8 +107,12 @@ The app is built with responsive design using Tailwind CSS breakpoints:
 - `xl`: 1280px and up
 - `2xl`: 1536px and up
 
-## 🙏 Acknowledgments
+## 👨‍💻 Author  
+**Rushabh Jain**  
+📧 [rushabhjain.dev@gmail.com]  
+🌐 [Portfolio](https://rjportfolio-0u3b.onrender.com/)  
+💼 [LinkedIn](https://www.linkedin.com/in/rushabhj24) | 🐙 [GitHub](https://github.com/RushabhJ24)
 
-- Powered by HTML and Tailwind CSS
+---
 
-Built with ❤️ by Rushabh
+> Made with ❤️ by Rushabh Jain
